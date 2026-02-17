@@ -1,0 +1,163 @@
+.segment-form {
+  padding: 40px;
+}
+
+.form-intro {
+  margin-bottom: 32px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.form-intro p {
+  margin-bottom: 12px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.scale-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.question-item {
+  padding: 24px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.2s;
+}
+
+.question-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+}
+
+.question-label {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.5;
+}
+
+.question-number {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.question-text {
+  flex: 1;
+}
+
+.radio-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+  display: none;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  font-weight: 600;
+  color: #666;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.radio-option:hover .radio-label {
+  border-color: #667eea;
+  background: #f0f4ff;
+  color: #667eea;
+}
+
+.radio-option input[type="radio"]:checked + .radio-label {
+  background: #667eea;
+  border-color: #667eea;
+  color: white;
+  transform: scale(1.1);
+}
+
+.error-message {
+  display: block;
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.form-actions {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 16px 48px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .segment-form {
+    padding: 24px;
+  }
+
+  .radio-group {
+    gap: 8px;
+  }
+
+  .radio-label {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .scale-labels {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
