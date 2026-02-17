@@ -1,0 +1,419 @@
+/* Status Legend - Inline version */
+.status-legend-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-legend-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+}
+
+.status-legend-items {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.status-legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.status-legend-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.worklist-container {
+  width: 100%;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.worklist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.worklist-header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.worklist-status-legend-inline {
+  display: flex;
+  align-items: center;
+}
+
+.worklist-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.worklist-search {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.worklist-search-input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.worklist-search-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.worklist-error {
+  padding: 15px;
+  background-color: #fee;
+  color: #c33;
+  border: 1px solid #fcc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.worklist-loading {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
+
+.worklist-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.worklist-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.worklist-th {
+  background-color: #f8f9fa;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.worklist-th-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 48px;
+  justify-content: flex-start;
+}
+
+.worklist-th-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  user-select: none;
+  min-height: 20px;
+}
+
+.worklist-th-label:hover {
+  color: #4a90e2;
+}
+
+.worklist-sort-indicator {
+  font-size: 12px;
+  color: #4a90e2;
+}
+
+.worklist-filter-input {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background: white;
+}
+
+.worklist-filter-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.1);
+}
+
+.worklist-filter-spacer {
+  height: 28px;
+  width: 100%;
+}
+
+.worklist-tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.15s;
+}
+
+.worklist-tr:hover {
+  background-color: #f8f9fa;
+}
+
+.worklist-td {
+  padding: 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Actions column styling */
+.actions-cell {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 32px;
+  height: 32px;
+}
+
+.action-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #4a90e2;
+  color: #4a90e2;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn svg {
+  display: block;
+}
+
+.view-btn:hover {
+  background-color: #e3f2fd;
+  border-color: #2196f3;
+  color: #2196f3;
+}
+
+.edit-btn:hover {
+  background-color: #fff3e0;
+  border-color: #ff9800;
+  color: #ff9800;
+}
+
+.worklist-empty {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-style: italic;
+}
+
+.null-value {
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Form Status Tags */
+.form-status-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 100%;
+}
+
+.form-status-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+/* Tag count dots column */
+.tag-count-dots-wrapper {
+  position: relative;
+  min-width: 120px;
+}
+
+.tag-count-dots {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag-count-dot-group {
+  position: relative;
+  display: inline-flex;
+}
+
+.tag-count-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 6px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid;
+  box-sizing: border-box;
+  cursor: default;
+  font-family: inherit;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.tag-count-dot-group:hover .tag-count-dot:not(.tag-count-dot-empty) {
+  transform: scale(1.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.tag-count-dot-empty {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.tag-count-dot-expanded {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tag-count-dots-reveal {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+  min-width: 160px;
+  max-width: 240px;
+  pointer-events: auto;
+}
+
+.tag-count-dots-reveal-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.tag-count-dots-reveal-list {
+  margin: 0;
+  padding: 0 0 0 18px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.tag-count-dots-reveal-list li {
+  margin-bottom: 2px;
+}
+
+.worklist-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.worklist-pagination-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.worklist-pagination-btn:hover:not(:disabled) {
+  background-color: #f8f9fa;
+  border-color: #4a90e2;
+  color: #4a90e2;
+}
+
+.worklist-pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.worklist-pagination-info {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .worklist-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .worklist-search {
+    max-width: 100%;
+  }
+
+  .worklist-th-content {
+    gap: 6px;
+  }
+
+  .worklist-filter-input {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+}
