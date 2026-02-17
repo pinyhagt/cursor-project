@@ -503,7 +503,7 @@ const ordersWorklistConfig = {
       type: 'string'
     },
     {
-      key: 'tagCounts',
+      key: 'status',
       label: 'Status',
       dataSource: 'formStatuses',
       type: 'object',
