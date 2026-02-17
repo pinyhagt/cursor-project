@@ -504,7 +504,7 @@ const ordersWorklistConfig = {
     },
     {
       key: 'tagCounts',
-      label: 'Tag Counts',
+      label: 'Status',
       dataSource: 'formStatuses',
       type: 'object',
       render: (row, value) => <TagCountDots formStatuses={value} />
