@@ -285,7 +285,7 @@ const Worklist = ({ config, statusLegend }) => {
                   </tr>
                 ) : (
                   paginatedData.map((row, index) => (
-                    <tr key={index} className="worklist-tr">
+                    <tr key={row.id ?? index} className="worklist-tr">
                       {columns.map(column => (
                         <td key={column.key} className="worklist-td">
                           {renderCell(row, column)}
